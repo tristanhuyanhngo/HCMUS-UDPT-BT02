@@ -1,14 +1,15 @@
 <?php
 
-class HomeModel {
-    protected $_table = 'products';
+class HomeModel extends Model {
+    protected $_table = 'task';
+
+//    function __construct() {
+//        parent::__construct();
+//    }
 
     public function getList(){
-        return [
-            'Item 1',
-            'Item 2',
-            'Item 3'
-        ];
+       $data = $this->db->query("SELECT * FROM $this->_table")->fetchAll(PDO::FETCH_ASSOC);
+       return $data;
     }
 
     public function getDetail($id) {

@@ -3,7 +3,7 @@ class App {
     private $__controller, $__action, $__params, $__routes;
     function __construct() {
 
-        global $routes;
+        global $routes, $config;
         
         $this->__routes = new Route();
 
@@ -14,6 +14,10 @@ class App {
         $this->__params = [];
 
         $this->handleUrl();
+
+//        echo '<pre>';
+//        print_r($config);
+//        echo '</pre>';
     }
 
     function getUrl() {
@@ -26,9 +30,12 @@ class App {
     }
 
     public function handleUrl() {
-        $this->__routes->handleRoute();
-
         $url = $this->getUrl();
+
+        $url = $this->__routes->handleRoute($url);
+
+        // echo $url;
+
         $urlArray = array_filter(explode('/',$url));
         $urlArray = array_values($urlArray);
 
