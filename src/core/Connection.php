@@ -23,8 +23,8 @@ class Connection {
 
         } catch (Exception $exception) {
             $mess = $exception->getMessage();
-
-            die($mess);
+            App::$app->loadError('database', ['message'=>$mess]);
+            die();
 //            if (preg_match('/Access denied for user/', $mess)) {
 //                die('Loi ket noi co so du lieu');
 //            }

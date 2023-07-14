@@ -4,16 +4,10 @@
     </div>
     <ul class="nav-links">
         <li>
-            <a href="/task/addTask">Add Task</a>
+            <a href="/task">Tasks</a>
         </li>
         <li>
-            <a href="/task/">View Task</a>
-        </li>
-        <li>
-            <a href="/category/addCategory">Add Category</a>
-        </li>
-        <li>
-            <a href="/category/">View Category</a>
+            <a href="/category">Categories</a>
         </li>
     </ul>
 </nav>

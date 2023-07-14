@@ -18,6 +18,8 @@ nav{
     text-transform: uppercase;
     letter-spacing: 5px;
     font-size: 20px;
+    margin-top: 12px;
+    margin-right: 500px;
 }
 
 .image-fluid{
@@ -27,7 +29,7 @@ nav{
 .nav-links{
     display: flex;
     justify-content: space-around;
-    width: 40%;
+    width: 20%;
     margin: 2px;
 }
 
@@ -174,4 +176,11 @@ nav{
     margin-bottom:0;
     font-size:13px;
     opacity:0.6;
+}
+
+.center-table {
+    margin: 0 auto;
+    float: none;
+    margin-top: 30px;
+    margin-bottom: 20px;
 }

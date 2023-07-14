@@ -1,10 +1,14 @@
 <?php
 class App {
     private $__controller, $__action, $__params, $__routes;
+
+    static public $app;
     function __construct() {
 
         global $routes, $config;
-        
+
+        self::$app = $this;
+
         $this->__routes = new Route();
 
         if (!empty($routes['default_controller'])) {
@@ -79,7 +83,8 @@ class App {
         //        echo '</pre>';
     }
 
-    public function loadError($name='404') {
+    public function loadError($name='404', $data=[]) {
+        extract($data);
         require_once 'errors/'.$name.'.php';
     }
 }
