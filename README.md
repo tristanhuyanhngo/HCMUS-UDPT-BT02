@@ -28,3 +28,6 @@ BT2 - Ứng dụng quản lý công việc
 ## Nguồn tham khảo:
 * Xây dựng mô hình MVC: https://www.youtube.com/playlist?list=PL8y3hWbcppt0nl_IU1-PbRxKm69dn_Nix
 * PHP Tutorial: https://www.youtube.com/watch?v=ExW0bYNMTlo&t=880s
+
+## Link Github:
+* https://github.com/tristanhuyanhngo/HCMUS-UDPT-BT02
